@@ -51,7 +51,7 @@ const Projects=({history})=>(
           <span>user with all they need to know about their upcoming trip </span>
           <div className="btn-details">
           <button className="btn-link" onClick={(e)=> (window.location='https://travel-app-5b612.web.app')}>Live</button>
-          <button className="btn-link" onClick={(e)=> (window.location='github.com/AdekunleDally/Travel-App')}>Github</button>
+          <button className="btn-link" onClick={(e)=> (window.location='https://github.com/AdekunleDally/Travel-App')}>Github</button>
           </div>
         </div>
       </div>
