@@ -20,8 +20,8 @@ const Projects=({history})=>(
           <span>a collection of their shopping items of choice,</span>
           <span>add to cart, and make payment</span>
           <div className="btn-details">
-            <button className="btn-link" onClick={()=>{history.push('/dally.herokuapp.com')}}>Live</button>
-            <button onClick={()=>history.push('https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
+            <button type='button' className="btn-link" onClick={()=>{history.push('/dallyapp.herokuapp.com')}}>Live</button>
+            <button type='button' onClick={()=>history.push('https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
           </div>
         </div>
       </div>
