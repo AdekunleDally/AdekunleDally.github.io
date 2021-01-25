@@ -1,5 +1,5 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './about.styles.scss';
 import udacity from '../../assets/udacity.png';
 import Funaab from  '../../assets/Funaab.png';
@@ -13,16 +13,20 @@ const AboutPage=()=>(
   <div className="about">
     <div className="details-by-the-left">
       <img src={lukman} alt="lukman"  className="lukman"/>
-      <h4 className="name">Lukman Adeokun </h4> 
+      <h4 className="name">Lukmon Adeokun </h4> 
       <div className=" social-links"> 
       <div className=" social-links-Github"> 
-      <Redirect className="logo-container" to='/https://github.com/AdekunleDally'> <GithubLogo  className="GithubLogo"/> </Redirect>
-        <Redirect className="social-nav-link" to='https://github.com/AdekunleDally'>Github</Redirect>
+       <GithubLogo  className="GithubLogo" onClick={(e)=>(window.location='https://www.github.com/AdekunleDally')}/> 
+       <a className="social-nav-link" href='https://github.com/AdekunleDally'>Github</a>
       </div>
 
       <div className=" social-links-LinkedIn">
-        <Redirect className="logo-container" to='https://www.linkedin.com/in/lukmon-adeokun-731b8939/'> <LinkedInLogo  className="LinkedInLogo"/> </Redirect>
-        <Redirect className="social-nav-link" to="https://www.linkedin.com/in/lukmon-adeokun-731b8939/">LinkedIn</Redirect>
+        
+          <LinkedInLogo  className="LinkedInLogo" onClick={(e)=>(window.location='https://www.linkedin.com/in/lukmon-adeokun-731b8939/')}/> 
+        
+      <a className="social-nav-link" href="https://www.linkedin.com/in/lukmon-adeokun-731b8939/">
+          LinkedIn
+        </a>
       </div>
       </div>
     </div>
