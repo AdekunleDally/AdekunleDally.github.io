@@ -1,6 +1,6 @@
 import React from 'react';
 import './projects.styles.scss'
-//import { Route, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import ShoppingImage from "../../assets/shoppingImage2.jpg"
 import ShoppingImage1 from "../../assets/covid19.jpg"
@@ -20,7 +20,7 @@ const Projects=({history})=>(
           <span>a collection of their shopping items of choice,</span>
           <span>add to cart, and make payment</span>
           <div className="btn-details">
-            <button className="btn-link" onClick={()=>history.push('http://dallyapp.herokuapp.com/')}>Live</button>
+            <button className="btn-link" onClick={()=>{history.push('/dally.herokuapp.com')}}>Live</button>
             <button onClick={()=>history.push('https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
           </div>
         </div>
@@ -74,4 +74,4 @@ const Projects=({history})=>(
     </div>
 )
 
-export default Projects
+export default withRouter(Projects)
