@@ -1,0 +1,45 @@
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .project{
+      border: 0.1px solid grey;
+      margin-bottom: 60px;
+
+      .shoppingImage{
+        width: 500px;
+        height: 300px;
+       // border-radius: 50%;
+        
+     }
+     .project-details{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+       .webApp-description{
+         display: flex;
+         width: 300px;
+         flex-wrap: wrap;
+       }
+
+       .btn-details{
+         display: flex;
+         margin-top: 15px;
+         
+         .btn-link{
+           margin: 5px;
+           border-radius: 30px;
+           width: 100px;
+           font-size: 20px;
+           padding: 5px;
+           cursor: pointer;
+
+         }
+       }
+     }
+}
+}

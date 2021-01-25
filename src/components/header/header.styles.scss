@@ -1,0 +1,53 @@
+.header{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: rgb(97, 97, 150);
+
+  .logo-container{
+    height: 50%;
+    width: 1px;
+    padding: 20px 80px;
+   // border-radius: 40%;
+   // background-color: white;
+  //  padding: 25px;
+
+  .logo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: red;
+    background-color: white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: -15px;
+  }
+  }
+
+  .nav-links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+  }
+
+  .nav-link{
+    padding: 10px 15px;
+    cursor:pointer;
+    text-decoration: none;
+    font-size:larger;
+    margin-right: 10px;
+    //color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  // padding: 10px 85px;
+   &:active{
+     color: yellow;
+   }
+
+}
+}

@@ -1,0 +1,171 @@
+.about{
+    display: flex;
+    flex-direction: row;
+
+    .details-by-the-left{
+        display: flex;
+        flex-direction: column;
+       // background-color: black;
+        width: 35%;
+        height: 90vh;
+        //border: 2px solid black;
+        margin:5px;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-delay: 4s;
+        animation-fill-mode: backwards;
+
+        .lukman{
+            margin: 20px;
+            padding: 20px;
+            width: 80%;
+            height: 150vh;
+            border-radius: 100%;
+        }
+
+        .name{
+            display: flex;
+            justify-content: center;
+            font-size: large;
+            margin-top: -20px;
+        }
+
+        .social-links{
+           display: flex;
+            justify-content: center;
+
+        &-LinkedIn{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-Github{
+            display: flex;
+            flex-direction: column;
+        }
+            .GithubLogo{
+                height: 30px;
+                width: 30px;
+                padding: 20px 80px;
+              //  padding: 25px;
+              justify-content: flex-start;
+
+              }
+            
+              .LinkedInLogo{
+                height: 30px;
+                width: 30px;
+                padding: 20px 80px;
+                justify-content: center;
+
+              //  padding: 25px;
+              }
+            
+
+           .social-nav-link{
+               text-decoration: none;
+               display: flex;
+               justify-content: center;
+               margin-top: -15px;
+               
+           }
+        }
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column; 
+      //  background-color: red;
+        width: 65%;
+        height: 100vh;
+       // border:2px solid blue;
+        margin:5px;
+        animation-name: moveInBottom;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+
+      .about-me{
+        display: flex;
+        flex-direction: column; 
+        
+        h2{
+            font-size: 25px;
+        }
+
+        .sub-profile{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding:2px;
+            font-size: 20px;
+
+            p{
+                line-height: 30px;
+            }
+        }
+      }
+
+      .Education{
+          display: flex;
+          flex-direction: column;
+
+          .school{
+              display: flex;
+              flex-direction: row;
+
+           .school-details{
+               padding: 2px;
+               margin: 5px;
+           }
+            
+          }
+
+          .udacity{
+            background-position: center;
+            background-size: cover;
+            width: 120px;
+            height:120px;
+            margin-bottom: 50px;
+          }
+
+      .funaab{
+          background-position: center;
+          background-size: cover;
+          width: 120px;
+          height: 90px;
+      }
+      }
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+       opacity: 0;
+       transform: translateY(100px);
+    }
+
+    80%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInLeft{
+    0%{
+       opacity: 0;
+       transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
