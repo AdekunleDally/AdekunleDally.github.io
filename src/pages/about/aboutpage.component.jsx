@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import './about.styles.scss';
 import udacity from '../../assets/udacity.png';
 import Funaab from  '../../assets/Funaab.png';
@@ -16,13 +16,13 @@ const AboutPage=()=>(
       <h4 className="name">Lukman Adeokun </h4> 
       <div className=" social-links"> 
       <div className=" social-links-Github"> 
-      <Link className="logo-container" to='/https://github.com/AdekunleDally'> <GithubLogo  className="GithubLogo"/> </Link>
-        <Link className="social-nav-link" to='https://github.com/AdekunleDally'>Github</Link>
+      <Redirect className="logo-container" to='/https://github.com/AdekunleDally'> <GithubLogo  className="GithubLogo"/> </Redirect>
+        <Redirect className="social-nav-link" to='https://github.com/AdekunleDally'>Github</Redirect>
       </div>
 
       <div className=" social-links-LinkedIn">
-        <Link className="logo-container" to='https://www.linkedin.com/in/lukmon-adeokun-731b8939/'> <LinkedInLogo  className="LinkedInLogo"/> </Link>
-        <Link className="social-nav-link" to="https://www.linkedin.com/in/lukmon-adeokun-731b8939/">LinkedIn</Link>
+        <Redirect className="logo-container" to='https://www.linkedin.com/in/lukmon-adeokun-731b8939/'> <LinkedInLogo  className="LinkedInLogo"/> </Redirect>
+        <Redirect className="social-nav-link" to="https://www.linkedin.com/in/lukmon-adeokun-731b8939/">LinkedIn</Redirect>
       </div>
       </div>
     </div>

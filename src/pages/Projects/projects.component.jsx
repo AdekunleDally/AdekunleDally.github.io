@@ -21,7 +21,7 @@ const Projects=({history})=>(
           <span>add to cart, and make payment</span>
           <div className="btn-details">
             <button type='button' className="btn-link" onClick={(e)=>(window.location='https://www.dallyapp.herokuapp.com')}>Live</button>
-            <button type='button' onClick={()=>history.push('https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
+            <button type='button' onClick={(e)=>(window.location='https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
           </div>
         </div>
       </div>
@@ -35,8 +35,8 @@ const Projects=({history})=>(
           <span>This  Javascript quiz  App serves to educate and enlighten people </span>
           <span>about the dreaded pandemic</span>
           <div className="btn-details">
-            <button className="btn-link" onClick={()=> history.push('https://covid-19-app-4a369.web.app/')}>Live</button>
-            <button className="btn-link" onClick={()=> history.push('https://github.com/AdekunleDally/COVID-19-QUIZ')}>Github</button>
+            <button className="btn-link" onClick={(e)=>(window.location='https://covid-19-app-4a369.web.app')}>Live</button>
+            <button className="btn-link" onClick={(e)=> (window.location='https://github.com/AdekunleDally/COVID-19-QUIZ')}>Github</button>
           </div>
         </div>
       </div>
@@ -50,8 +50,8 @@ const Projects=({history})=>(
           <span>This  javascript App utilizes multiple APIs to present a </span>
           <span>user with all they need to know about their upcoming trip </span>
           <div className="btn-details">
-          <button className="btn-link" onClick={()=> history.push('https://travel-app-5b612.web.app//')}>Live</button>
-          <button className="btn-link" onClick={()=> history.push('github.com/AdekunleDally/Travel-App')}>Github</button>
+          <button className="btn-link" onClick={(e)=> (window.location='https://travel-app-5b612.web.app')}>Live</button>
+          <button className="btn-link" onClick={(e)=> (window.location='github.com/AdekunleDally/Travel-App')}>Github</button>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ const Projects=({history})=>(
           <span> Processing (NLP)on articles or blogs found on other websites</span>
           <div className="btn-details">
             <button className="btn-link">Live</button>
-            <button className="btn-link" onClick={()=> history.push('https://github.com/AdekunleDally/NLP')}>Github</button>
+            <button className="btn-link" onClick={(e)=> (window.location='https://github.com/AdekunleDally/NLP')}>Github</button>
           </div>
         </div>
       </div>
