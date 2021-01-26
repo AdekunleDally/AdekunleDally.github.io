@@ -25,6 +25,22 @@
         }
     }
 
+    @media all and (max-width:768px){
+        .name{
+          font-size: 35px;
+          flex-wrap: wrap;
+        }
+      }
+    
+
+    @media all and (max-width:600px){
+        .name{
+          font-size: 30px;
+          flex-wrap: wrap;
+        }
+      }
+    
+
     .job-title{
         font-size: 30px;
         color: purple;
@@ -33,6 +49,20 @@
         animation-timing-function: ease-out;
         margin-bottom: 50px;
     }
+
+    @media all and (max-width:768px){
+        .job-title{
+          font-size: 25px;
+          flex-wrap: wrap;
+        }
+      }
+
+    @media all and (max-width:600px){
+        .job-title{
+          font-size: 20px;
+          flex-wrap: wrap;
+        }
+      }
 
     .rocket{
         width: 350px;
@@ -50,6 +80,8 @@
           font-size: large;
       }
     }
+
+   
 }
 
 @keyframes moveInLeft{
@@ -84,3 +116,4 @@
         transform: translate(0);
     }
 }
+

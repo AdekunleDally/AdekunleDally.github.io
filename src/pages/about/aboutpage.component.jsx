@@ -12,8 +12,11 @@ import {ReactComponent as LinkedInLogo} from '../../assets/LinkedIn7.svg'
 const AboutPage=()=>(
   <div className="about">
     <div className="details-by-the-left">
-      <img src={lukman} alt="lukman"  className="lukman"/>
-      <h4 className="name">Lukmon Adeokun </h4> 
+    <div className="lukman">
+    <img src={lukman} alt="lukman" />
+    <h4 className="name">Lukmon Adeokun </h4> 
+    </div>
+     
       <div className=" social-links"> 
       <div className=" social-links-Github"> 
        <GithubLogo  className="GithubLogo" onClick={(e)=>(window.location='https://www.github.com/AdekunleDally')}/> 
@@ -34,7 +37,7 @@ const AboutPage=()=>(
       <div className="about-me">
         <h2>About Me</h2>
         <div className="sub-profile">
-           <p>
+           <p className="sub-profile-content">
              I am a Front-End Developer with keen interest in software Development. With Intermediate level skills
              in javascript and ReactJs as well as good knowledge of testing using Jest.
              When I'm not coding, I like jogging, watching the English premier league and making new friends
@@ -49,9 +52,9 @@ const AboutPage=()=>(
             <img src={udacity} alt="udacity" className="udacity"/>
           </div>
           <div className="school-details">
-            <h3>Udacity</h3>
-            <h4>Front-End Nanodegree Program</h4>
-            <p>2020</p>
+            <h3 className="udacity-title">Udacity</h3>
+            <h4 className="program-title">Front-End Nanodegree Program</h4>
+            <p className="year">2020</p>
           </div>
         </div>
         <div className="school">

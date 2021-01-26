@@ -20,7 +20,7 @@ const Projects=({history})=>(
           <span>a collection of their shopping items of choice,</span>
           <span>add to cart, and make payment</span>
           <div className="btn-details">
-            <button type='button' className="btn-link" onClick={(e)=>(window.location='https://www.dallyapp.herokuapp.com')}>Live</button>
+            <button type='button' className="btn-link" onClick={(e)=>(window.location='https://dallyapp.herokuapp.com/')}>Live</button>
             <button type='button' onClick={(e)=>(window.location='https://github.com/AdekunleDally/ecommerce-website')} className="btn-link" >Github</button>
           </div>
         </div>

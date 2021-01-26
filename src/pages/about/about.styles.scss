@@ -5,51 +5,88 @@
     .details-by-the-left{
         display: flex;
         flex-direction: column;
+        //margin: 5px;
        // background-color: black;
-        width: 35%;
-        height: 90vh;
+        //width: 35%;
+        //height: 90vh;
         //border: 2px solid black;
-        margin:5px;
+        margin-top:-30px;
+        margin-left: 80px;
         animation-name: moveInLeft;
         animation-duration: 3s;
         animation-timing-function: ease-out;
         animation-delay: 4s;
         animation-fill-mode: backwards;
+        position: relative;
+
+        @media all and(max-width:900px){
+            margin-top:-180px;
+            margin-left: 10px;
+           // margin: auto;
+          }
+      
 
         .lukman{
-            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
             padding: 20px;
-            width: 70%;
-            height: 100vh;
-            border-radius: 100%;
+            width: 80%;
+            height: 80vh;
+            border-radius: 45%;
+            justify-content: center;
+            align-items: center;
+            //position: relative;
         }
 
         .name{
             display: flex;
             justify-content: center;
-            font-size: large;
-            margin-top: -20px;
+            font-size: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+           //position:absolute;
+             //left: 70px;
+            // top: 40px;
         }
 
         .social-links{
            display: flex;
             justify-content: center;
+            flex-direction: column;
+            margin-top: -50px;
+            position: absolute;
+            left: 5%;
+            top: 85%;
+
+            @media all and(max-width:900px){
+                margin-top:-340px;
+                left: 15%;
+               // margin-left: 10px;
+               // margin: auto;
+              }
 
         &-LinkedIn{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+              align-items: center;
         }
 
         &-Github{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+              align-items: center;
+            
         }
             .GithubLogo{
+                display: flex;
                 height: 30px;
                 width: 30px;
                 padding: 20px 80px;
               //  padding: 25px;
-              justify-content: flex-start;
+              
               cursor: pointer;
 
               }
@@ -98,10 +135,19 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding:2px;
             font-size: 20px;
+       
 
             p{
                 line-height: 30px;
+                    
             }
+
+            @media all and (max-width:900px){
+                p{
+                  font-size: 18px;
+                }
+              }
+
         }
       }
 
@@ -114,8 +160,19 @@
               flex-direction: row;
 
            .school-details{
-               padding: 2px;
-               margin: 5px;
+               padding: 10px;
+               margin-bottom: 30px;
+
+               .udacity-title{
+                   margin-top: -8px;
+               }
+
+               .program-title{
+                margin-top: 30px;
+               }
+               .year{
+                   margin-top: 30px;
+               }
            }
             
           }
@@ -125,7 +182,7 @@
             background-size: cover;
             width: 120px;
             height:120px;
-            margin-bottom: 50px;
+            margin-bottom: -110px;
           }
 
       .funaab{
@@ -133,6 +190,7 @@
           background-size: cover;
           width: 120px;
           height: 90px;
+          margin-top: 30px;
       }
       }
     }
