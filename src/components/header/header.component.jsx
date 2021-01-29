@@ -5,10 +5,7 @@ import {ReactComponent as Logo} from '../../assets/L5.svg'
 
 const Header=()=>(
     <div className="header">
-      <Link className="logo-container" to='/'>
-        <Logo  className="logo"/>
-      </Link>
-       
+      <Logo  className="logo"/>
       <div className="nav-links">
         <Link className="nav-link" to='/About'>About Me</Link>
         <Link className="nav-link" to='/MySkills'>My Skills</Link>

@@ -1,35 +1,8 @@
 .header{
-  height: 70px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
-  background-color: rgb(97, 97, 150);
-
-  @media all and(max-width:900px){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
-  @media all and(max-width:600px){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  .logo-container{
-   // position: absolute;
-   // top: 50%;
-   // left: 50%;
-    height: 50%;
-    width: 1px;
-    padding: 20px 80px;
-    position: relative;
-   // border-radius: 40%;
-   // background-color: white;
-  //  padding: 25px;
+  flex-wrap: wrap;
+  //background-color: rgb(97, 97, 150);
 
   .logo{
     display: flex;
@@ -44,54 +17,21 @@
     top: 20px;
     left: 12px;
     cursor: pointer;
-
-    @media all and(max-width:900px){
-      width: 15px;
-      height: 15px;
-     // margin: auto;
-    }
-
-    @media all and(max-width:600px){
-      width: 15px;
-      height: 15px;
-     // margin: auto;
-    }
-  }
   }
 
   .nav-links{
-    width: 50%;
+    width: 100%;
+   // width: 50%;
     display: flex;
+    //order: 1;
     align-items: center;
     justify-content: flex-end;
-    flex: 1;
+    //margin-top: 15px;
+  }
 
-    @media all and(max-width:900px){
-      margin-top: -27px;
-     font-weight: 400;
-     position: absolute;
-     top: 110%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-    }
-
-    @media all and(max-width:600px){
-      margin-top: -27px;
-     font-weight: 400;
-     position: absolute;
-     top: 110%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-    }
-
-    @media all and(max-width:500px){
-      margin-top: -22px;
-     font-weight: 400;
-     position: absolute;
-     top: 110%;
-     left: 57%;
-     transform: translate(-50%,-50%);
-    }
+  @media screen and (min-width:550px){
+    width: auto;
+    margin-top: 0;
   }
 
   .nav-link{
@@ -106,37 +46,6 @@
   // padding: 10px 85px;
    &:active{
      color: yellow;
-   }
-
-}
-
-@media all and (max-width: 900px){
-  .nav-link{
-    font-size: 18px;
-    flex-wrap: wrap;
-  }
-}
-
-@media all and (max-width: 768px){
-  .nav-link{
-    font-size: 18px;
-    flex-wrap: wrap;
-  }
-}
-
-@media all and (max-width:648px){
-  .nav-link{
-    font-size: 14px;
-    flex-wrap: wrap;
-  }
-}
-
-
-@media all and (max-width:600px){
-   .nav-link{
-     font-size: 12px;
-     flex-wrap: wrap;
-     width: 45px; 
    }
 }
 
