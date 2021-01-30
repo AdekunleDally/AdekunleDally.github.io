@@ -1,10 +1,15 @@
 .homepage{
+  margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //background-image: 'url('bckgrdImg')' ;
     //background-color: grey;
 
     .homepage > * {
@@ -19,13 +24,14 @@
 
 
     .name{
-        font-size: 60px;
+        font-size: 20px;
         animation-name: moveInLeft;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+       //font-style: oblique;
 
         span{
-            color:yellow;
+            color:grey;
         }
     }
 
@@ -47,11 +53,12 @@
 
     .job-title{
         font-size: 30px;
-        color: purple;
+        color: black;
         animation-name: moveInRight;
         animation-duration: 3s;
         animation-timing-function: ease-out;
         margin-bottom: 50px;
+        font-style: italic;
     }
 
     @media all and (max-width:768px){
