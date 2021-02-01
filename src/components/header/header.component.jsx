@@ -9,9 +9,9 @@ const Header=()=>(
         <Logo  className="logo" />
       </div>
         <div className="nav-links">
-          <Link className="nav-link" to='/About'>About Me</Link>
-          <Link className="nav-link" to='/MySkills'>My Skills</Link>
-         <Link className="nav-link" to='/Projects'>Projects</Link>
+          <Link className="nav-link" to='/About'>about me</Link>
+          <Link className="nav-link" to='/MySkills'>skills</Link>
+         <Link className="nav-link" to='/Projects'>projects</Link>
         </div>
     </div>
 )

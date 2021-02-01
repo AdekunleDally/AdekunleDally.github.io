@@ -24,7 +24,7 @@
 
 
     .name{
-        font-size: 20px;
+        font-size: 40px;
         animation-name: moveInLeft;
         animation-duration: 3s;
         animation-timing-function: ease-out;
@@ -52,13 +52,14 @@
     
 
     .job-title{
-        font-size: 30px;
+        font-size: 60px;
         color: black;
         animation-name: moveInRight;
         animation-duration: 3s;
         animation-timing-function: ease-out;
         margin-bottom: 50px;
         font-style: italic;
+        color: white;
     }
 
     @media all and (max-width:768px){

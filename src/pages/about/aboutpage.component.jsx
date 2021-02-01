@@ -12,11 +12,10 @@ import {ReactComponent as LinkedInLogo} from '../../assets/LinkedIn7.svg'
 const AboutPage=()=>(
   <div className="about">
     <div className="details-by-the-left">
-    <div className="lukman">
-    <img src={lukman} alt="lukman" />
-    <h4 className="name">Lukmon Adeokun </h4> 
-    </div>
-     
+      <div className="lukman">
+        <img src={lukman} alt="lukman" />
+      </div>
+      <h4 className="name">Lukmon Adeokun </h4> 
       <div className=" social-links"> 
       <div className=" social-links-Github"> 
        <GithubLogo  className="GithubLogo" onClick={(e)=>(window.location='https://www.github.com/AdekunleDally')}/> 

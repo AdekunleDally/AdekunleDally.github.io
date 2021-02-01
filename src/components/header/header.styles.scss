@@ -1,6 +1,11 @@
 .header{
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height:55px;
   //flex-wrap: wrap;
   //background-color: rgb(97, 97, 150);
   //background-color: aliceblue;
@@ -12,10 +17,17 @@
   //   flex-wrap: wrap;
   //  justify-content: space-between;
   // }
+
+//   @media screen and (max-width:600px){
+//    flex-direction: column;
+//   }
+
+
   .logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
 
   .logo{
     display: flex;
@@ -32,40 +44,40 @@
     cursor: pointer;
    // border: 2px solid blue; 
   }
-}
+ }
 
-  .nav-links{
-   // border: 2px solid pink ;
-    display: flex;
-    width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-   // color: brown;
-    //width: 50%;
-    order: 1;
-   justify-content: flex-end;
-    margin-top: 12px;
-  }
-
-  @media screen and (min-width:576px){
-    width: auto;
-    margin-top: 0;
-  }
-
-  .nav-link{
-    display: flex;
-    padding: 10px 15px;
-    cursor:pointer;
-    text-decoration: none;
-    font-size:20px;
-    color: black;
-    margin-right: 10px;
-    //color: blue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  // padding: 10px 85px;
-   &:active{
-     color: yellow;
+   .nav-links{
+  //  // border: 2px solid pink ;
+     display: flex;
+     justify-content: space-around ;
+     flex-flow: row nowrap;
+  //   width: 100%;
+  //   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  //   flex-flow:  row wrap;
+  //   //font-style: italic;
+  //  // color: brown;
+  
+  //  // margin-top: 12px;
    }
-}
+
+//   @media screen and (min-width:576px){
+//     width: auto;
+//     margin-top: 0;
+//   }
+
+   .nav-link{
+       display: flex;
+       cursor:pointer;
+       text-decoration: none;
+       font-size:20px;
+       color: black;
+//     margin-right: 10px;
+       letter-spacing: 5px;
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       padding: 18px 10px;
+//    &:active{
+//      color: yellow;
+//    }
+ }
 
 }
