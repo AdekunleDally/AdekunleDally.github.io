@@ -1,18 +1,17 @@
 import React from 'react';
 import './header.styles.scss';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import {ReactComponent as Logo} from '../../assets/L5.svg'
+import Hamburger from '../hamburger/hamburger.styles'
+//import RightNav from '../header/rightNav.styles'
 
 const Header=()=>(
     <div className="header">
       <div className="logo-container">
         <Logo  className="logo" />
       </div>
-        <div className="nav-links">
-          <Link className="nav-link" to='/About'>about me</Link>
-          <Link className="nav-link" to='/MySkills'>skills</Link>
-         <Link className="nav-link" to='/Projects'>projects</Link>
-        </div>
+      <Hamburger />
+     
     </div>
 )
  

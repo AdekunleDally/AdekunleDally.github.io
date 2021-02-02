@@ -1,0 +1,20 @@
+.hamburger{
+    display: flex;
+    width:2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+
+
+    .horizontal-line{
+        width:2rem;
+        height: 0.25rem;
+       // background-color: ${({ open}) => open ? '#ccc' : '#333'}
+        background-color: #333;
+        border-radius: 10px;
+
+    }
+}
